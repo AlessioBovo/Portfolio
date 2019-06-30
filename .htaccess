@@ -1,0 +1,7 @@
+<filesMatch "\.ini$">
+Order allow,deny
+Deny From all
+</filesMatch>
+
+ErrorDocument 403 /error403.html
+ErrorDocument 404 /error404.html
