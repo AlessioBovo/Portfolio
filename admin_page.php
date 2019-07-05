@@ -52,7 +52,7 @@ try {
            </div>
            <div class="comp-inner">
              <h3>Supprimer une compétence</h3>
-             <form action="del_comp.php" method="POST"></form>
+             <form action="del_comp.php" method="POST">
                  <select name="comp">
                  <?php
                     $tab = "SELECT nom_comp FROM competences;";
@@ -89,7 +89,7 @@ try {
              <form action="del_exp.php" method="POST">
                  <select name="année_del">
                  <?php
-                    $tab = "SELECT année FROM projets;";
+                    $tab = "SELECT année FROM expériences;";
                     $sql = $dbh->prepare($tab);
                      $sql->execute();
                      $tabulation = [];

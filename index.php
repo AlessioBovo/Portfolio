@@ -190,7 +190,7 @@
                     $parameters = parse_ini_file('db.ini');
                         $connect = new PDO($parameters['url'], $parameters['user'], $parameters['pass']);
                         $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                        $sql = $connect->prepare("SELECT * FROM projets");
+                        $sql = $connect->prepare("SELECT * FROM expériences");
                         $sql->execute();
                          while ($row = $sql->fetch()) {
                           echo "<div class='timeline'>";

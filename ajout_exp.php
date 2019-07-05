@@ -44,7 +44,7 @@ $param = parse_ini_file('db.ini');
     echo '<font color="red">Veuillez remplir tout les champs</font>';
     return;
   } else {
-    $query = "INSERT INTO projets(durée, année, nom, site, description)  VALUES(?,?,?,?,?)";
+    $query = "INSERT INTO expériences(durée, année, nom, site, description)  VALUES(?,?,?,?,?)";
     $sql = $dbh->prepare($query);
     $sql->execute([$durée,$année,$nom,$site,$description]);
     $dbh = null;

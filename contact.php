@@ -7,6 +7,6 @@
 
 
       mail($to,$headers,$subject,$message);
-        header('location: index.html');
+        header('location: index.php');
 
    

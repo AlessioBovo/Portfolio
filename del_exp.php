@@ -22,7 +22,7 @@ if (empty($année_del)) {
     return;
 }
 else {
-$query = "DELETE FROM projets WHERE année = :année_del ";
+$query = "DELETE FROM expériences WHERE année = :année_del ";
 $sql = $dbh->prepare($query);
 $sql->execute(array(":année_del"=>$année_del));
 $dbh = null;
